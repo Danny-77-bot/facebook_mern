@@ -8,6 +8,7 @@ import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import WorkIcon from '@mui/icons-material/Work';
 import InsertInvitationIcon from '@mui/icons-material/InsertInvitation';
 import SchoolIcon from '@mui/icons-material/School';
+import { Users } from '../../dummydata';
 export default function Sidebar() {
 return (
 <div className='sidebar'>
