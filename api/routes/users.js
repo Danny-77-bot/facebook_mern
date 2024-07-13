@@ -40,6 +40,14 @@ router.delete("/:id",async (req,res)=>{
   }
  })
 //get a user
+router.get("/:id",async (req,res)=>{
+  try {
+    const user=await User.findById(req.params.id);
+    return res.status(200).json(user);
+  } catch (error) {
+   return res.status(500).json(error);
+  }
+})
 //follow a user
 //unfollow a user
 
